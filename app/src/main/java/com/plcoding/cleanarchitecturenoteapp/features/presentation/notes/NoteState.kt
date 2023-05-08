@@ -1,6 +1,6 @@
 package com.plcoding.cleanarchitecturenoteapp.features.presentation.notes
 
-import android.provider.ContactsContract.CommonDataKinds.Note
+import com.plcoding.cleanarchitecturenoteapp.features.domain.model.Note
 import com.plcoding.cleanarchitecturenoteapp.features.domain.util.NoteOrder
 import com.plcoding.cleanarchitecturenoteapp.features.domain.util.OrderType
 
