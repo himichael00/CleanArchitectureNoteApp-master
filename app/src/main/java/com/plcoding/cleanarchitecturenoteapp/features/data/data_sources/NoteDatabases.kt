@@ -10,4 +10,8 @@ import com.plcoding.cleanarchitecturenoteapp.features.domain.model.Note
 )
 abstract class NoteDatabases: RoomDatabase() {
     abstract val noteDao: NoteDao
+
+    companion object{
+        const val DATABASE_NAME = "notes_db"
+    }
 }
