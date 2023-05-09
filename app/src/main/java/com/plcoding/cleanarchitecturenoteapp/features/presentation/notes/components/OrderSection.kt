@@ -30,6 +30,22 @@ fun OrderSection (
                 selected = noteOrder is NoteOrder.Date,
                 onSelect = { onOrderChange(NoteOrder.Date(noteOrder.orderType)) }
             )
+            Spacer(modifier = Modifier.height(16.dp))
+            Row(
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                RadioButton(
+                    text = "Ascending",
+                    selected = noteOrder.orderType is OrderType.Ascending,
+                    onSelect = { onOrderChange(noteOrder.copy(OrderType.Ascending)) }
+                )
+                Spacer(modifier = Modifier.width(8.dp))
+                RadioButton(
+                    text = "Descending",
+                    selected = noteOrder.orderType is OrderType.Descending,
+                    onSelect = { onOrderChange(noteOrder.copy(OrderType.Descending)) }
+                )
+            }
         }
     }
 }
