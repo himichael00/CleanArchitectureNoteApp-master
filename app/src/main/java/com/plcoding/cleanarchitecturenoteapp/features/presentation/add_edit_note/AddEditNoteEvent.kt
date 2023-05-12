@@ -1,4 +1,4 @@
-package com.plcoding.cleanarchitecturenoteapp.features.presentation.add_edit_node
+package com.plcoding.cleanarchitecturenoteapp.features.presentation.add_edit_note
 
 import androidx.compose.ui.focus.FocusState
 

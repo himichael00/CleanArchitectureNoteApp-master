@@ -1,4 +1,4 @@
-package com.plcoding.cleanarchitecturenoteapp.features.presentation.add_edit_node
+package com.plcoding.cleanarchitecturenoteapp.features.presentation.add_edit_note
 
 data class NoteTextFieldState(
     val text: String = "",
