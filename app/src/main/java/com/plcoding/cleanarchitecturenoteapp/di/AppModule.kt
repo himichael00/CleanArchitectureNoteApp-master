@@ -6,10 +6,7 @@ import androidx.room.Room
 import com.plcoding.cleanarchitecturenoteapp.features.data.data_sources.NoteDatabases
 import com.plcoding.cleanarchitecturenoteapp.features.data.repository.NoteRepositoryImpl
 import com.plcoding.cleanarchitecturenoteapp.features.domain.repository.NoteRepository
-import com.plcoding.cleanarchitecturenoteapp.features.domain.use_case.AddNote
-import com.plcoding.cleanarchitecturenoteapp.features.domain.use_case.DeleteNotes
-import com.plcoding.cleanarchitecturenoteapp.features.domain.use_case.GetNotes
-import com.plcoding.cleanarchitecturenoteapp.features.domain.use_case.NoteUseCases
+import com.plcoding.cleanarchitecturenoteapp.features.domain.use_case.*
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -41,7 +38,8 @@ object AppModule {
         return NoteUseCases(
             getNotes = GetNotes(repository),
             deleteNotes = DeleteNotes(repository),
-            addNote = AddNote(repository)
+            addNote = AddNote(repository),
+            getNote = GetNote(repository)
         )
     }
 }
