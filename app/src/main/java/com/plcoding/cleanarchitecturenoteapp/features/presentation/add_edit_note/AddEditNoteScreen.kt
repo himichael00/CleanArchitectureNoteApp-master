@@ -1,6 +1,5 @@
 package com.plcoding.cleanarchitecturenoteapp.features.presentation.add_edit_note
 
-import android.widget.Space
 import androidx.compose.animation.Animatable
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
@@ -117,7 +116,7 @@ fun AddEditNoteScreen(
                 text = titleState.text,
                 hint = titleState.hint,
                 onValueChange = {
-                                viewModel.onEvent(AddEditNoteEvent.EnteredTitle(it))
+                    viewModel.onEvent(AddEditNoteEvent.EnteredTitle(it))
 
                 },
                 onFocusChange = {

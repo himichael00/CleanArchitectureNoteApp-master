@@ -49,7 +49,7 @@ class AddEditNoteViewModel@Inject constructor(
                             text = note.title,
                             HintVisible = false
                         )
-                        _noteContent.value = noteContent.value.copy(
+                        _noteContent.value = _noteContent.value.copy(
                             text = note.content,
                             HintVisible = false
                         )

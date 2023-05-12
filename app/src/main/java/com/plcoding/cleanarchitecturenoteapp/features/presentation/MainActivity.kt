@@ -47,7 +47,7 @@ class MainActivity : ComponentActivity() {
                                     defaultValue = -1
                                 },
                                 navArgument(
-                                    name = "noteColor   "
+                                    name = "noteColor"
                                 ) {
                                     type = NavType.IntType
                                     defaultValue = -1
